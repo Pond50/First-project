@@ -3,7 +3,7 @@
     <div class="column items-center">
       <img
         alt="Quasar logo"
-        src="~@/assets/quasar-logo-vertical.svg"
+        src="~@/assets/45FD92E4-6430-4CF8-81E1-145A5C95B961_4_5005_c.jpeg"
         style="width: 200px; height: 200px"
       />
 
