@@ -3,8 +3,8 @@
     <div class="column items-center">
       <img
         alt="Quasar logo"
-        src="~@/assets/45FD92E4-6430-4CF8-81E1-145A5C95B961_4_5005_c.jpeg"
-        style="width: 200px; height: 200px"
+        src="~@/assets/CD1A3BD2-86D9-4C89-AE0D-A76CA7B8655E_1_105_c.jpeg"
+        style="width: auto; height: auto"
       />
 
       <q-btn
