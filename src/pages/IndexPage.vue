@@ -1,21 +1,41 @@
 <template>
-  <q-page class="flex flex-center">
-    <div class="column items-center">
-      <img
-        alt="Quasar logo"
-        src="~@/assets/CD1A3BD2-86D9-4C89-AE0D-A76CA7B8655E_1_105_c.jpeg"
-        style="width: auto; height: auto"
-      />
+  <div class="q-pa-md" style="max-width: 400px">
+  <q-form @submit="onSubmit" @reset="onReset" class="q-gutter-md">
+    <q-input
+      filled
+      v-model="name"
+      label="Your name *"
+      hint="Name and surname"
+      lazy-rules
+      :rules="[val => (val && val.length > 0) || 'Please type something']"
+    />
 
+    <q-input
+      filled
+      type="number"
+      v-model.number="age"
+      label="Your age *"
+      lazy-rules
+      :rules="[
+        val => (val !== null && val !== '') || 'Please type your age',
+        val => (val > 0 && val < 100) || 'Please type a real age'
+      ]"
+    />
+
+    <q-toggle v-model="accept" label="I accept the license and terms" />
+
+    <div>
+      <q-btn label="Submit" type="submit" color="primary" />
       <q-btn
-        class="q-mt-md"
+        label="Reset"
+        type="reset"
         color="primary"
-        to="/second"
-        label="Go to Second Page"
-        no-caps
+        flat
+        class="q-ml-sm"
       />
     </div>
-  </q-page>
+  </q-form>
+</div>
 </template>
 
 <script setup>
