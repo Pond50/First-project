@@ -14,7 +14,7 @@
       </q-input>
 
       <q-input
-        color="grey-3"
+        color="indigo"
         label-color="orange"
         outlined
         v-model="text"
