@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <div class="q-gutter-y-md column" style="max-width: 300px">
-      <q-input color="teal" v-model="text" label="ชื่อ">
+      <q-input color="purple" v-model="text" label="ชื่อ">
         <template v-slot:prepend>
           <q-icon name="event" />
         </template>
@@ -37,7 +37,7 @@
         </template>
       </q-input>
 
-      <q-input color="teal" outlined v-model="text" label="ชื่อ">
+      <q-input color="purple" outlined v-model="text" label="ชื่อ">
         <template v-slot:append>
           <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo.svg" />
@@ -71,5 +71,5 @@
 import { ref } from 'vue'
 
 const text = ref('')
-const mainColor = ref('teal')
+const mainColor = ref('purple')
 </script>
