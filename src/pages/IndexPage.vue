@@ -71,4 +71,5 @@
 import { ref } from 'vue'
 
 const text = ref('')
+const mainColor = ref('teal')
 </script>
